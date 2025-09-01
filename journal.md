@@ -13,13 +13,20 @@ I started the project offf by setting up the initial schematic, opening Kicad an
 
 This is the ESP32-WROOM-32E-R2, it's got a much larger package than the ATMega32U4 (like 3 times the size), but after making a comparison chart:
 
+<div align="center">
+  
+  
 | Feature       | ESP32‑WROOM‑32E‑R2               | ATmega32U4                    |
 |--------------|----------------------------------|-------------------------------|
 | **CPU Speed** | Dual-core, 240 MHz               | 8-bit, 16 MHz                 |
-| **RAM**       | 2MB                               | 2.5 KB                        |
+| **RAM**       | 520 KB + 16 KB RTC               | 2.5 KB                        |
 | **Bluetooth** | Yes (v4.2, Classic + BLE)        | No                            |
 | **Size**      | 18 × 25.5 × 3.1 mm               | ~7×7 mm (QFN) or 10×10 mm     |
 | **Cost**      | ~$2.50 – $3.30                   | ~$4.50 – $5.50                |
 
-As you can see, the only real benefit I would gain by using the atmega32u4 would be size, which is negligible anyways when making larger keyboards, and it'll actually reduce the cost of PCBA because I won't need an additional bluetooth, ram, and power regulation module.
+(look I centered it!)
+
+</div>
+
+As you can see, the only real benefit I would gain by using the atmega32u4 would be size, which is negligible anyways when making larger keyboards, and it'll actually reduce the cost of PCBA because I won't need an additional bluetooth module, and less capacitors.
 
