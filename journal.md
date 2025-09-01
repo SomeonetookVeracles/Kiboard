@@ -7,7 +7,7 @@ Created On: "8/31/2025"
 
 # August 31st - Setup
 
-I started the project offf by setting up the initial schematic, opening Kicad and installing all the necessary libraries. For the MCU I used an ATMega32U4, which had it's... downsides, along with needing a dedicated clock on the board, as well as being incredibly expensive for the capabilities (5$ + 2.5kb ram hurts the soul), there are only 25 GPIO pins, and 5 power pins that need each of their own decoupling capacitors, this was exhausting to deal with, so I decided to go ahead and try out a new competitor I previously overlooked: The ESP-32 Wroom. 
+I started the project offf by setting up the initial schematic, opening Kicad and installing all the necessary libraries. For the MCU I used an ATMega32U4, which had it's... downsides, along with needing a dedicated clock on the board, as well as being incredibly expensive for the capabilities (5$ + 2.5kb ram hurts the soul), there are only 25 GPIO pins, and 5 power pins that need each of their own decoupling capacitors, this was exhausting to deal with, so I decided to go ahead and try out a new competitor I previously overlooked: The ESP-32 Wroom:
 
 ![ESP32-WROOM-32E-N8R2](https://github.com/user-attachments/assets/d6b174e6-c8da-4ba3-853f-b7365afb59ae)
 
@@ -67,8 +67,15 @@ This is the new design, the schematic is also better, you can see that the desig
 
 Focusing on the USB receptacle real quick, the resistors connected to CC1 and 2 are 5.1k, enabling power reception and allowing reversible input for the plug itself. SBU1 and SBU2 are unecessary for the USB 2.0 speeds we'll be using for this, so we can just leave those disconnected for this. 
 
+
 Now for the switches themselves.
 
+I'm a lazy guy, so instead of manually measuring and positioning individual switches on the board, I'll be using an [online editor](https://www.keyboard-layout-editor.com/), and a [plugin](https://github.com/darakuneko/keyboard-layouter) for Kicad designed specifically for this purpose.
 
+I started off by looking at some inspiration, and after immediately getting bored of that, I decided to do a 84 switch board, giving me a compact design while also giving me access to fn and specialist keys, I also will be extending the pcb 30mm on the left (not shown on the image), giving me space for the microcontroller and screen without any interference from other parts. 
 
+<div align="center">
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c3747761-c5c9-43fa-81c9-049c7b7ea7e3" style="width:80%; height:auto;"/>
+</div>
 
+I saved this layout as a JSON file, and got back to the schematic.
