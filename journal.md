@@ -35,3 +35,26 @@ Now that we've got the boring stuff out of the way, we can get to the actually i
 
 I started of by setting up the board, placing down the ESP-32 and decoupling capacitors Now I plan on adding a screen and a few other doodads to this, so I started by locating the SDA and SCL pin and (temporarily) marking them as unpopulated, so I don't accidentally use them when routing up the keyboard matrix. (I know I could just use a global net but I'm lazy and this gives me less of a headache.) I also crossed out the SENSOR_VP and SENSOR_VN pins because those are input only and I don't really need them (this might change later).
 
+<div align="center">
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e0a40c1c-8720-46a3-a4e8-18171417c760" style="width:80%; height:auto;"/>
+</div>
+...
+
+
+
+
+
+(Ok I'm gonna be so real here I got distracted and spent an hour and a half trying to find a component for the screen, and I ended up settling on the ST 7789, the one problem being I don't have a schematic for the exact model JLPCB supports assembling, so I instead am going to be adding it when I export it to EasyEDA later. )
+
+
+
+
+...
+
+
+
+Now, back to the original design, we have a small problem, that being that the ESP-32 WROOM 32E doesn't natively support USB connectivity, so I'll be swapping over to using the ESP-32-S3-WROOM-2, which has more GPIO, USB support, and up to 32mb of flash and 16mb of SRAM. Now, you might be asking why I didn't go for this in the original design, and well, I didn't know it existed, so we're doing this instead.
+
+<div align="center">
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2696cbcd-4b25-419d-90f1-19f86344019e" style="width:80%; height:auto;"/>
+</div>
