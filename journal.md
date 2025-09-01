@@ -26,7 +26,12 @@ This is the ESP32-WROOM-32E-R2, it's got a much larger package than the ATMega32
 
 (look I centered it!)
 
+(This is small but after looking at the documentation I decided to go for the module with 16mb of PSRAM so I can play around with animations and other cool stuff.)
 </div>
 
 As you can see, the only real benefit I would gain by using the atmega32u4 would be size, which is negligible anyways when making larger keyboards, and it'll actually reduce the cost of PCBA because I won't need an additional bluetooth module, and less capacitors.
+
+Now that we've got the boring stuff out of the way, we can get to the actually interesting stuff, the schematics.
+
+I started of by setting up the board, placing down the ESP-32 and decoupling capacitors Now I plan on adding a screen and a few other doodads to this, so I started by locating the SDA and SCL pin and (temporarily) marking them as unpopulated, so I don't accidentally use them when routing up the keyboard matrix. (I know I could just use a global net but I'm lazy and this gives me less of a headache.) I also crossed out the SENSOR_VP and SENSOR_VN pins because those are input only and I don't really need them (this might change later).
 
