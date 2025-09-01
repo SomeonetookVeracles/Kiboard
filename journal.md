@@ -79,3 +79,21 @@ I started off by looking at some inspiration, and after immediately getting bore
 </div>
 
 I saved this layout as a JSON file, and got back to the schematic.
+
+<div align="center">
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d883aed9-8b57-4acd-8133-2c26c70d2bbb" style="width:80%; height:auto;"/>
+</div>
+
+This is the main layout of each individual switch (I'll get around to adding LEDs later)
+
+<div align="center">
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/15952da8-0599-44ef-9b9a-c4c76779a7de" style="width:80%; height:auto;"/>
+</div>
+
+I'll be making this hotswappable using [this module from JLPCB](https://www.lcsc.com/product-detail/C41430893.html), it looks like a knockoff of the standard ones used for KaliH pcbs and should work perfectly fine.
+
+Now we're ready to go and make the initial PCB, before adding on additional doodads like rotary endoders and the screen.
+
+But I'm hungry, and it's 9pm, so I'm gonna make dinner and probably work on roulette, so I'll do that tomorrow.
+
+#### Total time spent: 4.5h
