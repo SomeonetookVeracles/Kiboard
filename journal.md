@@ -58,3 +58,14 @@ Now, back to the original design, we have a small problem, that being that the E
 <div align="center">
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2696cbcd-4b25-419d-90f1-19f86344019e" style="width:80%; height:auto;"/>
 </div>
+
+This is the new design, the schematic is also better, you can see that the designer actually labelled the pins with their alt functions, it's not a huge thing but I like the thought put into it. I also put the USB receptacle on it, I'm using a basic SMD connector for simplicity's sake, they're also slightly easier to wire up than the THT design.
+
+<div align="center">
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/78e5e3b2-1766-4d09-93be-44f66375184f" style="width:80%; height:auto;"/>
+</div>
+
+Focusing on the USB receptacle real quick, the resistors connected to CC1 and 2 are 5.1k, enabling power reception and allowing reversible input for the plug itself. SBU1 and SBU2 are unecessary for the USB 2.0 speeds we'll be using for this, so we can just leave those disconnected for this. 
+
+
+
