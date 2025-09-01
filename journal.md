@@ -67,5 +67,8 @@ This is the new design, the schematic is also better, you can see that the desig
 
 Focusing on the USB receptacle real quick, the resistors connected to CC1 and 2 are 5.1k, enabling power reception and allowing reversible input for the plug itself. SBU1 and SBU2 are unecessary for the USB 2.0 speeds we'll be using for this, so we can just leave those disconnected for this. 
 
+Now for the switches themselves.
+
+
 
 
